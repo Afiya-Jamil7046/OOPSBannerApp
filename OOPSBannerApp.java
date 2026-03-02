@@ -1,5 +1,49 @@
 public class OOPSBannerApp {
-    public static void main (String[] args){
-        System.out.println("OOPS");
+    public static String[] getOpattern() {
+        return  new String[] {
+           "  *****   ",
+           " *     *  ",
+           "*       * ",
+           "*       * ",
+           "*       * ",
+           " *     *  ",
+           "  *****   ",
+
+        };
     }
-}
+
+    public static String[] getPpattern() {
+        return  new String[] {
+           "*******   ",
+           "*      *  ",
+           "*      *  ",
+           "*******   ",
+           "*         ",
+           "*         ",
+           "*         ",
+        };
+    }
+
+    public static String[] getSpattern() {
+        return  new String[] {
+          "   ***** ",
+          "  *     *",
+          " *       ",
+          "  *****  ",
+          "       * ",
+          " *     * ",
+          "  *****  ",
+
+        };
+    }
+public static void main(String[] args) {
+    String[] oPattern = getOpattern();
+    String[] pPattern = getPpattern();
+    String[] sPattern = getSpattern();
+
+    for (int i = 0; i < oPattern.length; i++) {
+        System.out.print(oPattern[i] + "   " +oPattern[i] + "   " +  pPattern[i] + "   " + sPattern[i]);
+        System.out.println();
+    };
+} 
+}   
