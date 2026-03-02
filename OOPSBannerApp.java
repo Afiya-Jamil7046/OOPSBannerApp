@@ -1,19 +1,49 @@
 public class OOPSBannerApp {
-    public static void main(String[] args) {
+    public static String[] getOpattern() {
+        return  new String[] {
+           "  *****   ",
+           " *     *  ",
+           "*       * ",
+           "*       * ",
+           "*       * ",
+           " *     *  ",
+           "  *****   ",
 
-        String[] lines = {
-
-            String.join("   ", "  *****   ", "  *****   ", "*******   ", "  *****  "),
-            String.join("   ", " *     *  ", " *     *  ", "*      *  ", " *     * "),
-            String.join("   ", "*       * ", "*       * ", "*      *  ", "*        "),
-            String.join("   ", "*       * ", "*       * ", "*******   ", "  *****  "),
-            String.join("   ", "*       * ", "*       * ", "*         ", "       * "),
-        
-            String.join("   ", " *     *  ", " *     *  ", "*         ", " *     * "),
-            String.join("   ", "  *****   ", "  *****   ", "*         ", "  *****  "),
         };
-       
-    for(String line : lines)
-        System.out.println(line);
     }
-}
+
+    public static String[] getPpattern() {
+        return  new String[] {
+           "*******   ",
+           "*      *  ",
+           "*      *  ",
+           "*******   ",
+           "*         ",
+           "*         ",
+           "*         ",
+        };
+    }
+
+    public static String[] getSpattern() {
+        return  new String[] {
+          "   ***** ",
+          "  *     *",
+          " *       ",
+          "  *****  ",
+          "       * ",
+          " *     * ",
+          "  *****  ",
+
+        };
+    }
+public static void main(String[] args) {
+    String[] oPattern = getOpattern();
+    String[] pPattern = getPpattern();
+    String[] sPattern = getSpattern();
+
+    for (int i = 0; i < oPattern.length; i++) {
+        System.out.print(oPattern[i] + "   " +oPattern[i] + "   " +  pPattern[i] + "   " + sPattern[i]);
+        System.out.println();
+    };
+} 
+}   
