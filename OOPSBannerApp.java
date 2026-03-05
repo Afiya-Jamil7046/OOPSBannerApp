@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class OOPSBannerApp {
 
     static Map<Character, String[]> createMap() {
